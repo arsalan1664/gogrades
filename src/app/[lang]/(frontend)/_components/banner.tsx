@@ -1,10 +1,11 @@
+import Action from "@/lib/action";
 import { Check, Star } from "lucide-react";
 import { cookies } from "next/headers";
 import Image from "next/image";
 import React from "react";
 
-const Banner = () => {
-  const country = cookies().get("X-Country");
+const Banner = async () => {
+  const country = await Action();
   return (
     <div className="">
       <div
@@ -24,7 +25,7 @@ const Banner = () => {
               - AFFORDABLE - FASTEST - 100% SECURED & CONFIDENTIAL -
             </div>
             <div className="font-bold text-4xl text-gray-100 pt-2 ">
-              {country?.value} Premier Assignment Help
+              {country} Premier Assignment Help
             </div>
             <div className="flex items-center pt-3 text-gray-100 font-medium text-lg">
               🔅 Retired Professors at the Helm 🔅 Retired Professors at the
