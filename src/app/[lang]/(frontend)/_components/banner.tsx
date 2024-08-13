@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Check, Mail, Phone, Star, User } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -44,6 +45,74 @@ const Banner = () => {
                                 <div className="font-medium text-white text-xl">4500+ Experts</div>
                                 <div className="text-white font-light">Online to help you 24x7</div>{" "}
                             </div>
+=======
+import Action from "@/lib/action";
+import { Check, Star } from "lucide-react";
+import { cookies } from "next/headers";
+import Image from "next/image";
+import React from "react";
+
+const Banner = async () => {
+  const country = await Action();
+  return (
+    <div className="">
+      <div
+        style={{
+          backgroundImage: "url('/GGImages/Banner/UK-Banner.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="h-[110vh] bg-red-400"
+      >
+        <div className="grid lg:grid-cols-3 grid-cols-1 p-16 ">
+          <div className="lg:col-span-2 ">
+            <div className="text-yellow-500 font-extrabold text-2xl">
+              GOGRADES ™ SPECIAL OFFER
+            </div>
+            <div className="text-green-400 font-extrabold text-xl pt-3">
+              - AFFORDABLE - FASTEST - 100% SECURED & CONFIDENTIAL -
+            </div>
+            <div className="font-bold text-4xl text-gray-100 pt-2 ">
+              {country} Premier Assignment Help
+            </div>
+            <div className="flex items-center pt-3 text-gray-100 font-medium text-lg">
+              🔅 Retired Professors at the Helm 🔅 Retired Professors at the
+              Helm
+            </div>
+            <div className="font-semibold text-white text-2xl pt-3 ">
+              All Subjects Covered - Grab Your Deal Now!
+            </div>
+            <div className="flex items-center gap-4 py-3">
+              <div className="font-semibold text-yellow-400 text-2xl">
+                GET A+ GRADE
+              </div>
+              <button className="rounded-full py-3 px-4 flex items-center bg-green-700 text-white font-semibold text-lg hover:animate-bounce transition ease-in duration-200 delay-200">
+                Order Now
+              </button>
+              <button
+                aria-label="order"
+                className="rounded-full py-3 px-4 flex items-center bg-gray-300 text-slate-800 font-semibold text-lg "
+              >
+                Get a Free Quote
+              </button>
+            </div>
+            <div className="flex items-center gap-2">
+              <Image
+                className=""
+                src="/hero11.png"
+                width={50}
+                height={100}
+                alt="hero11"
+              ></Image>
+              <div className="flex-col leading-none">
+                <div className="font-medium text-white text-xl">
+                  4500+ Experts
+                </div>
+                <div className="text-white font-light">
+                  Online to help you 24x7
+                </div>{" "}
+              </div>
+>>>>>>> 3ed7989b0a98cb952dc6578cc72e17f9197a4a06
 
                             <Image className=""src="/hero2.png"width={50}height={100}alt="hero11"></Image>
                             <div className="flex-col leading-none">
@@ -205,7 +274,13 @@ const Banner = () => {
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     );
+=======
+      </div>
+    </div>
+  );
+>>>>>>> 3ed7989b0a98cb952dc6578cc72e17f9197a4a06
 };
 
 export default Banner;
