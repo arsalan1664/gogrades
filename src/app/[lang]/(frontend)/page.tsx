@@ -1,5 +1,6 @@
 import { Locale } from "@/i18n.config";
 import { headers } from "next/headers";
+import Banner from "./_components/banner";
 
 export default async function Home({ params }: { params: { lang: Locale } }) {
   const ip = headers().get("X-Forwarded-For");
@@ -7,8 +8,8 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
   const city = headers().get("x-city");
 
   return (
-    <div className="space-y-3 h-screen bg-slate-800 pt-20 text-white text-5xl flex items-start justify-center ">
-      {ip} <br /> {city} <br /> {url}
+    <div >
+      <Banner/>
     </div>
   );
 }
