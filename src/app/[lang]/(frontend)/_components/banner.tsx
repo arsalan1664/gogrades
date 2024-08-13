@@ -266,43 +266,9 @@ const Banner = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
       </div>
     </div>
   );
 };
-=======
-        <div className='w-[100%] max-w-[400px] rounded-lg overflow-hidden'>
-        <div className="relative  pr-10 pl-10 bg-black bg-center bg-cover"
-        style={{ backgroundImage: "url('/GGImages/DLF/UK-DLF.jpg')" }}>
-            <div className="absolute inset-0 bg-black opacity-50"></div>
-            <div className="relative flex items-center justify-center pt-3 ">
-            <div className='text-2xl font-semibold text-white pr-1'>Pakistan </div>
-            <div className='text-white font-semibold text-lg'>Special Discount</div>
-            </div>
-            <div className='relative text-sky-300 font-semibold text-center text-xl'>Flat 50% OFF</div>
-            <div className='relative text-center font-medium text-gray-200'>Also Get Free Plagiarism Report
-            Fill & Generate Discount Coupon</div>
-            </div>
-            <div className='bg-gray-300'>
-            <div className='flex items-center justify-center gap-2 pt-3'>
-                <Image src="/guaranteed.svg" width={100} height={100} alt='guarantee'></Image>
-                <Image src="/moneyback.svg" width={100} height={100} alt='guarantee'></Image>
-                <Image src="/privacy-icon.svg" width={70} height={100} alt='guarantee'></Image>
-            </div>
-            <div className='p-7'>
-            <form action="">
-                <div className='flex items-center border border-gray-300 bg-white rounded-md py-2'>
-                    <div className='px-2'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                    <input className='outline-none' type="text" placeholder='Enter Fullname' name='fullname' />
-                </div>
-                <div className='flex items-center border border-gray-300 bg-white rounded-md py-2'>
-                    <div className='px-2'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                    <input className='outline-none' type="number" placeholder='Enter Phone Number' name='number' />
-                </div>
-            </form>
-            </div>
-            </div>
->>>>>>> 6190a669dba42713fa1305c380182b4a1d22e346
 
 export default Banner;

@@ -1,8 +1,7 @@
-"use server";
-
+import { Locale } from "@/i18n.config";
 import { NextRequest } from "next/server";
 
-export async function getLocale(request: NextRequest) {
+export function getLocale(request: NextRequest): Locale {
   const country = request.cookies.get("X-Country");
   const count = country?.value.toLowerCase();
   if (count === "australia") {
