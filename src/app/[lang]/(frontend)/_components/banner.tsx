@@ -1,8 +1,10 @@
 import { Check, Star } from "lucide-react";
+import { cookies } from "next/headers";
 import Image from "next/image";
 import React from "react";
 
 const Banner = () => {
+  const country = cookies().get("X-Country");
   return (
     <div className="">
       <div
@@ -11,7 +13,7 @@ const Banner = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="h-[110vh] "
+        className="h-[110vh] bg-red-400"
       >
         <div className="grid lg:grid-cols-3 grid-cols-1 p-16 ">
           <div className="lg:col-span-2 ">
@@ -22,7 +24,7 @@ const Banner = () => {
               - AFFORDABLE - FASTEST - 100% SECURED & CONFIDENTIAL -
             </div>
             <div className="font-bold text-4xl text-gray-100 pt-2 ">
-              Pakistan Premier Assignment Help
+              {country?.value} Premier Assignment Help
             </div>
             <div className="flex items-center pt-3 text-gray-100 font-medium text-lg">
               🔅 Retired Professors at the Helm 🔅 Retired Professors at the
